@@ -5,6 +5,7 @@ function App() {
   const Incrementer = () => {
     return { type: "Incrementer" };
   };
+  
   const Decrementer = () => {
     return { type: "Decrementer" };
   };
