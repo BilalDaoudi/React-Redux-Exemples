@@ -3,7 +3,6 @@ import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import AjouterPersonne from './AjouterPersonne';
 import ListePersonne from './ListePersonne';
 import ModifierPersonne from './ModifierPersonne';
-
 const App = () => {
 return (    
 <BrowserRouter> 
@@ -15,5 +14,7 @@ return (
 </BrowserRouter>
 );
 };
+
+
 
 export default App;
