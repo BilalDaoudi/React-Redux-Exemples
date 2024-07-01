@@ -4,14 +4,16 @@ function App() {
   const dispatch = useDispatch();
   const Incrementer = () => {
     return { type: "Incrementer" };
-  };
-  
+  };  
   const Decrementer = () => {
     return { type: "Decrementer" };
   };
   const Reset = () => {
     return { type: "Reset" };
   };
+
+
+  
   return (
     <div className="App">
       <div>{num}</div>
