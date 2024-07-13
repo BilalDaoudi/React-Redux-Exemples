@@ -6,8 +6,6 @@ export default function Products() {
   const Cart = useSelector((state) => state.Cart);
   const dispatch = useDispatch();
 
-  
-
   return (
     <div>
       <div className="row">
