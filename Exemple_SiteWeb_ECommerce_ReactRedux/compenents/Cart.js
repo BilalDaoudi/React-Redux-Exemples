@@ -5,7 +5,6 @@ import { DeleteAll,Delete } from "../config/actions";
 export default function Products() {
   const Cart = useSelector((state) => state.Cart);
   const dispatch = useDispatch();
-
   return (
     <div>
       <div className="row">
@@ -21,7 +20,6 @@ export default function Products() {
           </div>
         ))}
       </div>
-
       <div className="info">
             {Cart.length === 0 ? <p>Total 0 $</p> : <p><strong>TOTAL : MAD {Cart.reduce((total,c) => total += c.total , 0)} </strong></p>}
             <br/>
