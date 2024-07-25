@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+
 function App() {
   const num = useSelector((data) => data.num);
   const dispatch = useDispatch();
@@ -11,8 +12,6 @@ function App() {
   const Reset = () => {
     return { type: "Reset" };
   };
-
-
   
   return (
     <div className="App">
