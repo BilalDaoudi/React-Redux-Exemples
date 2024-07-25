@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 
 const ListePersonne = () => {
   const Personnes = useSelector((state) => state.Personnes);
-//   console.log(Personnes);
+  // console.log(Personnes);
   const dispatch = useDispatch();
+  
   return (
     <div>
       <Link to={`/Ajouter`}><button>Nouvelle Personne</button></Link>
@@ -26,7 +27,6 @@ const ListePersonne = () => {
               <td>{person.nom} </td>
               <td>{person.prenom}</td>
               <td>{person.age}</td>
-
               <td>
                 <button onClick={() => dispatch(Supprimer(person.id))}>
                   Supprimer
