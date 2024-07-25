@@ -2,7 +2,6 @@
 const initialState = {
     Personnes: [],
   };
-  
   const reducer = (state = initialState, action) => {
     switch (action.type) {
       case 'Ajouter':
@@ -15,5 +14,4 @@ const initialState = {
         return state;
     }
   };
-  
   export default reducer;
