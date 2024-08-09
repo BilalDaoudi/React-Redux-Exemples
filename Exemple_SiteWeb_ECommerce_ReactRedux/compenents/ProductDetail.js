@@ -5,14 +5,12 @@ import { Add, Update } from "../config/actions";
 
 export default function DetailProduct() {
   const { id } = useParams();
-
   const Product = useSelector((state) =>
     state.Products.find((p) => p.id === parseInt(id))
   );
   const FindCart = useSelector((state) =>
     state.Cart.filter((c) => c.id === parseInt(id))
   );
-
   const dispatch = useDispatch();
   const [quantiteProduct, setQuantite] = useState(1);
   const [totalProduct, setTotalProduct] = useState(
@@ -29,8 +27,7 @@ export default function DetailProduct() {
       setTotalProduct(Product.prix);
     }
   }
-  // console.log(Product);
-
+  
   function ActionCart() {
     const newCart = {
       id: Product.id,
