@@ -4,16 +4,17 @@ import { useParams } from "react-router-dom";
 import { Modifier } from "./actions";
 import { Link } from "react-router-dom";
 
-
 const ModifierPersonne = () => {
   const { id } = useParams();
   const person = useSelector((state) =>
     state.Personnes.find((person) => person.id === parseInt(id))
   );
+  
   const dispatch = useDispatch();
   const [nom, setNom] = useState(person.nom);
   const [prenom, setPrenom] = useState(person.prenom);
   const [age, setAge] = useState(person.age);
+  
   const ModifierPersonne = () => {
     const modifierPresonne = { ...person, nom,prenom, age };
     dispatch(Modifier(modifierPresonne));
