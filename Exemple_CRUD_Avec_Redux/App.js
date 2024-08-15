@@ -5,7 +5,6 @@ import ListePersonne from './ListePersonne';
 import ModifierPersonne from './ModifierPersonne';
 
 const App = () => {
-    
     return (    
         <BrowserRouter> 
             <Routes>
@@ -15,7 +14,7 @@ const App = () => {
             </Routes>
         </BrowserRouter>
     );
-    
 };
+
 
 export default App;
