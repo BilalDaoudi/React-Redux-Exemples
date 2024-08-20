@@ -1,10 +1,8 @@
 import React from "react";
 
 export default function Home(){
-    
     return(
-        
-        <div className="container">
+      <div className="container">
         <div>
           <div className="home">
             <h1>Bienvenue sur mon site web</h1>
@@ -14,6 +12,5 @@ export default function Home(){
           </div>
         </div>
       </div>
-    
     )
 }
