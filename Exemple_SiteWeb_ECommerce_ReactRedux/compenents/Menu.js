@@ -1,11 +1,11 @@
 import React from "react";
+
 import { useSelector } from "react-redux";
+
 import { Link } from "react-router-dom";
 
 export default function Menu() {
-  
   const Cart = useSelector((state) => state.Cart);
-  
   return (
     <div className="row">
       <div className="col-2 p-3 text-xxl-center title">PhoneStore</div>
