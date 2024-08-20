@@ -1,10 +1,9 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 
 export default function Product(props) {
-  
   const uri = "/ProductDetail/" + props.product.id;
-  
   return (
     <div className="col-3 card">
       <Link to={uri}>
