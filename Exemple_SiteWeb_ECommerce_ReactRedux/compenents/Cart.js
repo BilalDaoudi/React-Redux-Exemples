@@ -1,12 +1,12 @@
 import React from "react";
+
 import { useDispatch, useSelector } from "react-redux";
+
 import { DeleteAll,Delete } from "../config/actions";
 
 export default function Products() {
-  
   const Cart = useSelector((state) => state.Cart);
   const dispatch = useDispatch();
-  
   return (
     <div>
       <div className="row">
