@@ -1,7 +1,11 @@
 import { useState } from 'react';
+
 import {useSelector, useDispatch } from 'react-redux';
+
 import { Ajouter } from './actions';
+
 import { Link } from 'react-router-dom';    
+
 
 const AjouterPersonne = () => {
   const [nom, setNom] = useState('');
@@ -11,6 +15,7 @@ const AjouterPersonne = () => {
   const newid = Personnes.length === 0 ? 1 : Personnes[Personnes.length-1].id + 1;
   const dispatch = useDispatch();
 
+  
   const AjouterPer = () => {
     const person = {id: newid, nom,prenom,age};
     dispatch(Ajouter(person));
@@ -27,6 +32,7 @@ const AjouterPersonne = () => {
       <Link onClick={AjouterPer} to="/"><button >Add Person</button></Link>
     </div>
   );
+
 
 };
 
