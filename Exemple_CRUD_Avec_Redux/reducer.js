@@ -2,7 +2,9 @@
 const initialState = {
     Personnes: [],
   };
+
   const reducer = (state = initialState, action) => {
+      
     switch (action.type) {
       case 'Ajouter':
         return {...state,Personnes: [...state.Personnes, action.payload],};
@@ -13,5 +15,7 @@ const initialState = {
       default:
         return state;        
     }  
+      
   };
+
   export default reducer;
