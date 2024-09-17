@@ -6,14 +6,18 @@ const objetState = {
 };
 
 export default function reducer(state = objetState, actionstate) {
+  
   switch (actionstate.type) {
+      
     case "Add":
       return { ...state, Cart: [...state.Cart, actionstate.cart] };
+      
     case "Delete":
       return {
         ...state,
         Cart: state.Cart.filter((c) => c.id !== actionstate.idcart),
       };
+      
     case "Update":
       return {
         ...state,
@@ -30,8 +34,10 @@ export default function reducer(state = objetState, actionstate) {
           } else return c;
         }),
       };
+      
     case "DeleteAll":
       return { ...state, Cart: [] };
+      
     default:
       return state;
   }
