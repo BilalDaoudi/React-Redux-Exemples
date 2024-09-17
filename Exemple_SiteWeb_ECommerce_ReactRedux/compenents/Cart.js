@@ -1,12 +1,14 @@
+// import
 import React from "react";
-
 import { useDispatch, useSelector } from "react-redux";
-
 import { DeleteAll,Delete } from "../config/actions";
 
+// function
 export default function Products() {
+  
   const Cart = useSelector((state) => state.Cart);
   const dispatch = useDispatch();
+  
   return (
     <div>
       <div className="row">
@@ -28,5 +30,6 @@ export default function Products() {
             <button className="btn btn-primary pay" onClick={()=>dispatch(DeleteAll())}> Pay</button>
       </div>
     </div>
+
   );
 }
