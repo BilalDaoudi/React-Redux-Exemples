@@ -1,6 +1,8 @@
+
 import React from "react";
 
 export default function Home(){
+    
     return(
       <div className="container">
         <div>
@@ -13,4 +15,5 @@ export default function Home(){
         </div>
       </div>
     )
+    
 }
