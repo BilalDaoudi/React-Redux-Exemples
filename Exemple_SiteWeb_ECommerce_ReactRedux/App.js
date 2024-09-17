@@ -6,11 +6,8 @@ import Home from "./compenents/Home";
 import DetailProduct from "./compenents/ProductDetail";
 import Cart from "./compenents/Cart";
 
-
-
 export default function App(){
     return(
-            
             <BrowserRouter>
                 <Menu/>
                 <Routes>
