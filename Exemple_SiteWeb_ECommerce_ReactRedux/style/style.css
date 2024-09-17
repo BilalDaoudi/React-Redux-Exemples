@@ -1,9 +1,7 @@
-
 .title{
   text-align: center;
   font-weight: 600;
 }
-
 .info{
     margin: 20px;
    padding-left: 50px;
@@ -15,7 +13,6 @@
 .row{
     width: 100%;
 }
-
 body {
     background-color: #f8f8f8;
     font-family: Arial, sans-serif;
