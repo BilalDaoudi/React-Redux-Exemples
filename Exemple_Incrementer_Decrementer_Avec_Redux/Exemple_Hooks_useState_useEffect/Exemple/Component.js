@@ -1,24 +1,23 @@
 import React from "react";
+
 import { useState } from "react";
+
 import { useEffect } from "react";
 
 export default function Afficher(props) {
   const [msg, setMsg] = useState(props.header);
   const [btn, setBtn] = useState(props.btn);
 
-  
   // ------------ seulement aprés render ---------------------------------------
   // useEffect(function () {
   //   alert("render");
   // }, []);
-
 
   // ------------ aprés render et re-render ---------------------------------------
   // useEffect(function () {
   //   alert("render");
   // });
 
-  
   // ------------ aprés render et les data a mofifier(data des argement) ---------------------------------------
   useEffect(function () {
     alert("modifier data");
