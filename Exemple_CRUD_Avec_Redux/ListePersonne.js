@@ -1,12 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
-
 import { Supprimer } from "./actions";
-
 import { Link } from "react-router-dom";
 
-
 const ListePersonne = () => {
-  
   const Personnes = useSelector((state) => state.Personnes);
   const dispatch = useDispatch();
   
