@@ -1,13 +1,8 @@
 import { useState } from "react";
-
 import { useSelector, useDispatch } from "react-redux";
-
 import { useParams } from "react-router-dom";
-
 import { Modifier } from "./actions";
-
 import { Link } from "react-router-dom";
-
 const ModifierPersonne = () => {
   const { id } = useParams();
   const person = useSelector((state) =>
