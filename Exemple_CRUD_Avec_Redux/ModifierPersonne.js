@@ -5,6 +5,8 @@ import { Modifier } from "./actions";
 import { Link } from "react-router-dom";
 
 const ModifierPersonne = () => {
+
+  
   const { id } = useParams();
   const person = useSelector((state) =>
     state.Personnes.find((person) => person.id === parseInt(id))
