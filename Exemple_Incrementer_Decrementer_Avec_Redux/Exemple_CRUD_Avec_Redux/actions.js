@@ -10,5 +10,3 @@ export const Ajouter = (personne) => ({
     type: 'Modifier',
     payload: personne,
   });
-  
-  
