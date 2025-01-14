@@ -1,12 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Supprimer } from "./actions";
 import { Link } from "react-router-dom";
-
 const ListePersonne = () => {
-  // Get Personne from reducer.js
   const Personnes = useSelector((state) => state.Personnes);
   const dispatch = useDispatch();
-  
   return (
     <div>
       <Link to={`/Ajouter`}><button>Nouvelle Personne</button></Link>
@@ -27,7 +24,6 @@ const ListePersonne = () => {
               <td>{person.nom} </td>
               <td>{person.prenom}</td>
               <td>{person.age}</td>
-
               <td>
                 <button onClick={() => dispatch(Supprimer(person.id))}>
                   Supprimer
@@ -43,5 +39,4 @@ const ListePersonne = () => {
     </div>
   );
 };
-
 export default ListePersonne;
