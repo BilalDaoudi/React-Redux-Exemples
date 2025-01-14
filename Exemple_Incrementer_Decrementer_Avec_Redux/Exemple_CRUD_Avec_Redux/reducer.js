@@ -1,4 +1,3 @@
-
 const initialState = {
     Personnes: [],
   };
@@ -18,5 +17,4 @@ const initialState = {
         return state;
     }
   };
-  
-  export default reducer;
+export default reducer;
