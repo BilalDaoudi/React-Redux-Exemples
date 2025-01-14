@@ -16,7 +16,6 @@ const ModifierPersonne = () => {
     const modifierPresonne = { ...person, nom,prenom, age };
     dispatch(Modifier(modifierPresonne));
   };
-
   return (
     <div>
       <h1>Modifier Personne ID : {id}</h1>
@@ -29,5 +28,4 @@ const ModifierPersonne = () => {
     </div>
   );
 };
-
 export default ModifierPersonne;
