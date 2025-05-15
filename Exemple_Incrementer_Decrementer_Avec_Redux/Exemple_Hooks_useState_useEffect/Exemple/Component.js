@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+
+
+
 export default function Afficher(props) {
   const [msg, setMsg] = useState(props.header);
   const [btn, setBtn] = useState(props.btn);
