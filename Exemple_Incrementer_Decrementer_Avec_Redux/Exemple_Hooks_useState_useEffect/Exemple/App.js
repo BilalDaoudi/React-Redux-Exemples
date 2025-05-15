@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import Afficher from "./Component";
+
+
+
 export default function App(props) {
   const [affiche,setAffiche] = useState(false);
   function Affiche(){
