@@ -1,5 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
 
+
+
+
+
+
 function App() {
   const num = useSelector((data) => data.num);
   const dispatch = useDispatch();
